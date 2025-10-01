@@ -8,6 +8,7 @@
     "tw:dev": "tailwindcss -i app/assets/css/tailwind.css -o app/assets/css/tw.css --content './app/**/*.{vue,js,ts}' -w",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
+    "start": "PORT=${PORT:-8080} HOST=:: NITRO_HOST=:: node .output/server/index.mjs",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
